@@ -1,20 +1,11 @@
 
-# coding: utf-8
-
-# In[2]:
-
 from pathlib import Path
 from typing import List
 import pandas as pd
 from pandas import DataFrame
 import matplotlib.pyplot as plt
 
-
-# In[3]:
-
 # data pre processing
-
-
 base_data_folder_path = Path('public_dataset')
 file_name_to_colume_names = {
     'Accelerometer.csv': ['Systime', 'EventTime', 'ActivityID', 'X', 'Y', 'Z', 'Phone_orientation'],
@@ -67,9 +58,6 @@ def get_user_session_data(user_id: str, user_session_id: str) -> DataFrame:
 pass
 # visualize of the features you pick
 pass
-
-
-# In[ ]:
 
 def multiV_curvature(nbddata: DataFrame) -> float:  
     """
